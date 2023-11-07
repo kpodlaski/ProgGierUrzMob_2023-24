@@ -1,4 +1,5 @@
 // taken from Derek O'Reily DKIT, Dundalk
+//https://derek.comp.dkit.ie/games_development/canvas/exampleCode/images/skeleton.png
 var url = 'skeleton.png'
 
 function draw_image(){
