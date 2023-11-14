@@ -15,11 +15,11 @@ class GameObject{
         this.inner_frame = 0;
         this.lastX = x;
         this.lastY = y; 
-        console.log("obj",this);
+        console.log("obj",image);
     }
 
-    drawOnScreen(context){
-        context.clearRect(this.lastX,this.lastY,this.width, this.height);
+    drawOnScreen(context,clear=false){
+        if (clear) context.clearRect(this.lastX,this.lastY,this.width, this.height);
         context.drawImage(
             this.image,
             this.actual_frame*this.width, this.actual_pose*this.height,
